@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Lari Terus</string>
+    <string name="title_activity_main">Lari Terus</string>
+    <string name="package_name">com.kelvin.lariterus</string>
+    <string name="custom_url_scheme">com.kelvin.lariterus</string>
+</resources>
