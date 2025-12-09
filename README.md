@@ -2,8 +2,9 @@
 
 ## Deskripsi Proyek
 
-> **Proyek UAS:** Game ini dikembangkan untuk memenuhi Tugas Akhir Semester (UAS) mata kuliah **Cloud Computing**, **Pemrograman Game**, dan **Pemrograman Berbasis Mobile**.
-![kentaro-ezgif com-cut (4)](https://github.com/user-attachments/assets/f6c9943d-5edd-4927-9438-8d28996a098c)
+> **Proyek UAS:** Game ini dikembangkan untuk memenuhi Tugas Akhir Semester (UAS) mata kuliah **Cloud Computing**, **Pemrograman Game**, dan **Pemrograman Berbasis M![kentaro2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
+obile**.
+
 
 Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Library Phaser 3 dengan integrasi Cloud untuk penyimpanan data skor dan dapat dimainkan di perangkat mobile.
 
