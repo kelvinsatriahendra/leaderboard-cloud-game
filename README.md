@@ -2,7 +2,10 @@
 
 ## Deskripsi Proyek
 
-> **Proyek UAS:** Game ini dikembangkan untuk memenuhi Tugas Akhir Semester (UAS) mata kuliah **Cloud Computing**, **Pemrograman Game**, dan **Pemrograman Berbasis M![kentaro2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
+> **Proyek UAS:** Game ini dikembangkan untuk memenuhi Tugas Akhir Semester (UAS) mata kuliah **Cloud Computing**, **Pemrograman Game**, dan **Pemrograman Berbasis M!
+
+## preview
+[kentaro2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
 obile**.
 
 
