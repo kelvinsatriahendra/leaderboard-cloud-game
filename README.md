@@ -37,7 +37,6 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 ## 🔴 Demo & Download
 
 - **Mainkan di Web:** [Lari Trus di Netlify](https://lari-terus-kelvin.netlify.app/)
-- **Versi Android:** Tersedia dalam format `.apk`. [Download APK di sini](#) *(Ganti tanda pagar dengan link download APK kamu jika ada, atau hapus baris ini jika file dikirim manual)*
 
 ## Pengembangan Game
 
