@@ -8,7 +8,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 
 ## Tampilan (Preview)
 
-![](assets/gameGif3.gif)
+![kentaro2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
 
 ## 🔧 Dibuat Menggunakan
 
@@ -23,7 +23,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 
 > **Lari Trus** adalah game platformer endless-runner sederhana yang berfokus pada mengumpulkan koin dan menjatuhkan misil.
 
-> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin sebelum bar kesehatan (*health bar*) habis sepenuhnya.
+> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin sebelum bar kesehatan (_health bar_) habis sepenuhnya.
 
 ## Cara Bermain
 
@@ -32,27 +32,30 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 ## 🔴 Demo & Download
 
 - **Mainkan di Web:** [Lari Trus di Netlify](https://lari-terus-kelvin.netlify.app/)
-- **Versi Android:** Tersedia dalam format `.apk`. [Download APK di sini](#) *(Ganti tanda pagar dengan link download APK kamu jika ada, atau hapus baris ini jika file dikirim manual)*
+- **Versi Android:** Tersedia dalam format `.apk`. [Download APK di sini](#) _(Ganti tanda pagar dengan link download APK kamu jika ada, atau hapus baris ini jika file dikirim manual)_
 
 ## Pengembangan Game
 
 - ### Ideasi & Konteks Akademik
-  Game ini dirancang sebagai implementasi dari tugas gabungan mata kuliah **Pemrograman Game**, **Cloud Computing**, dan **Pemrograman Berbasis Mobile**. 
-  
-  Tantangan utamanya adalah menciptakan game yang responsif, ringan, terintegrasi dengan layanan cloud, dan dapat berjalan lancar di perangkat mobile (Android). Saya memutuskan untuk membuat genre *Endless Runner* karena membutuhkan logika permainan yang cepat dan manajemen memori yang efisien.
+
+  Game ini dirancang sebagai implementasi dari tugas gabungan mata kuliah **Pemrograman Game**, **Cloud Computing**, dan **Pemrograman Berbasis Mobile**.
+
+  Tantangan utamanya adalah menciptakan game yang responsif, ringan, terintegrasi dengan layanan cloud, dan dapat berjalan lancar di perangkat mobile (Android). Saya memutuskan untuk membuat genre _Endless Runner_ karena membutuhkan logika permainan yang cepat dan manajemen memori yang efisien.
 
 - ## Desain
+
   Meskipun proyek ini adalah game 2D sederhana, saya ingin visualnya menarik. Saya membangun sistem **Parallax** dengan 3 lapisan gambar latar belakang bergulir.
-  
-  Tantangan teknisnya adalah membuat background bergulir tanpa batas (*infinite scrolling*) tanpa membebani memori browser/ponsel, yang berhasil diatasi dengan teknik daur ulang aset gambar (*pooling*).
+
+  Tantangan teknisnya adalah membuat background bergulir tanpa batas (_infinite scrolling_) tanpa membebani memori browser/ponsel, yang berhasil diatasi dengan teknik daur ulang aset gambar (_pooling_).
 
 - ## Pengembangan (Development)
+
   Pengembangan dilakukan menggunakan Phaser 3 dengan langkah-langkah berikut:
 
   - Menginstal Phaser menggunakan Node Package Manager (npm).
   - Mendesain Scene Game:
     1. Membuat latar belakang parallax.
-    1. Menambahkan logika karakter pemain (lompat, lari, *hitbox*).
+    1. Menambahkan logika karakter pemain (lompat, lari, _hitbox_).
     1. Menambahkan rintangan dan musuh.
   - **Integrasi Cloud Computing:**
     - Menghubungkan game dengan **Firebase Realtime Database**.
@@ -68,6 +71,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 ## Cara menjalankan game di komputer lokal
 
 ### Prasyarat
+
 1. Node Package Manager (npm)
 
 ### Langkah-langkah
@@ -75,8 +79,9 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 1. Kloning repositori ke komputer lokal kamu dengan menjalankan perintah berikut di terminal:
    ```bash
    git clone [https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git](https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git)
+   ```
 
-## ✒️  Penulis
+## ✒️ Penulis
 
 👤 **Kelvin Satria Hendra**
 
@@ -88,6 +93,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 Berikan bintang ⭐️ jika kamu menyukai proyek ini!
 
 ## Terimakasih
+
 (Credits)
 Terima kasih kepada penyedia aset gratis yang digunakan dalam pembelajaran ini:
 

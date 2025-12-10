@@ -9,7 +9,6 @@ import {
   query,
   orderByChild,
   limitToLast,
-  equalTo,
 } from "firebase/database";
 
 // --- KONFIGURASI FIREBASE KAMU ---
@@ -28,90 +27,59 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// ==========================================
-// BAGIAN BARU: SISTEM ID UNIK & CEK SKOR
-// ==========================================
-
-// 1. FUNGSI ID UNIK (KTP DIGITAL)
-// Membuat ID khusus untuk HP/Laptop ini agar tidak tertukar dengan orang lain
-function getDeviceID() {
-  let id = localStorage.getItem("lari_terus_id");
-  if (!id) {
-    // Kalau belum punya ID, buat baru
-    id = "user_" + Date.now() + "_" + Math.floor(Math.random() * 1000);
-    localStorage.setItem("lari_terus_id", id);
-  }
-  return id;
-}
-
-// 2. FUNGSI CEK NAMA (Dipanggil di Boot.js)
-// Mencegah orang lain pakai nama yang sudah diklaim di HP ini
+// --- [DIUBAH] FUNGSI CEK NAMA ---
+// Karena tidak ada kuncian Device ID, semua nama BOLEH dipakai.
+// Kita hanya cek untuk menyapa "Selamat Datang Kembali" atau "Pemain Baru".
 export const checkUsernameAvailability = async (usernameInput) => {
-  const currentDeviceID = getDeviceID();
-  const dbRef = ref(db, "leaderboard");
+  // Bersihkan nama dari karakter terlarang Firebase (., #, $, [, ])
+  const safeName = usernameInput.replace(/[.#$[\]]/g, "");
 
-  // Cari apakah ada username yang sama
-  const q = query(dbRef, orderByChild("username"), equalTo(usernameInput));
+  const userRef = ref(db, "leaderboard/" + safeName);
 
   try {
-    const snapshot = await get(q);
-
+    const snapshot = await get(userRef);
     if (snapshot.exists()) {
-      // Nama ditemukan! Cek siapa pemiliknya.
-      let isMyName = false;
-
-      snapshot.forEach((childSnapshot) => {
-        // Cek apakah data itu milik Device ID ini?
-        if (childSnapshot.key === currentDeviceID) {
-          isMyName = true;
-        }
-      });
-
-      if (isMyName) {
-        return { status: true, msg: "Selamat datang kembali!" };
-      } else {
-        return { status: false, msg: "Nama sudah dipakai orang lain!" };
-      }
+      return { status: true, msg: `Halo lagi, ${usernameInput}!` };
     } else {
-      return { status: true, msg: "Nama tersedia." };
+      return { status: true, msg: "Nama tersedia, selamat main!" };
     }
   } catch (error) {
-    console.error("Error cek nama:", error);
     return { status: true, msg: "Offline Mode" };
   }
 };
 
-// 3. FUNGSI SIMPAN SKOR PINTAR
-// Hanya simpan kalau SKOR BARU > SKOR LAMA
+// --- [DIUBAH] FUNGSI SIMPAN SKOR (BERDASARKAN NAMA) ---
 export const saveScoreToCloud = async (name, newScore) => {
-  const userID = getDeviceID(); // Ambil ID HP ini
-  const userRef = ref(db, "leaderboard/" + userID); // Simpan di loker khusus ID ini
+  // Gunakan Nama sebagai Kunci (ID)
+  const safeName = name.replace(/[.#$[\]]/g, "");
+  const userRef = ref(db, "leaderboard/" + safeName);
 
   try {
     const snapshot = await get(userRef);
 
     if (snapshot.exists()) {
+      // --- DATA SUDAH ADA ---
       const oldData = snapshot.val();
       const oldScore = oldData.score;
 
-      // Bandingkan skor
+      // Cek Highscore: Kalau skor baru lebih tinggi, Update!
       if (newScore > oldScore) {
         set(userRef, { username: name, score: newScore });
-        console.log(`Rekor Baru! ${oldScore} -> ${newScore}`);
+        console.log(`Rekor ${name} pecah! ${oldScore} -> ${newScore}`);
       } else {
-        console.log(`Skor ${newScore} tidak cukup tinggi.`);
+        console.log(`Skor ${newScore} belum mengalahkan ${oldScore}.`);
       }
     } else {
-      // Pemain baru, langsung simpan
+      // --- DATA BARU ---
       set(userRef, { username: name, score: newScore });
-      console.log("Data pemain baru disimpan!");
+      console.log(`Pemain baru ${name} dicatat!`);
     }
   } catch (error) {
-    console.error("Gagal simpan:", error);
+    console.error("Gagal simpan skor:", error);
   }
 };
 
-// 4. FUNGSI AMBIL LEADERBOARD (Tetap Sama)
+// --- FUNGSI AMBIL LEADERBOARD (TETAP) ---
 export const getTopScores = (callback) => {
   const topScoreQuery = query(
     ref(db, "leaderboard"),
