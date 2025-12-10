@@ -8,7 +8,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 
 ## Tampilan (Preview)
 
-![kentaro2-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
+![Gameplay Lari Trus](https://github.com/user-attachments/assets/7e4adb08-8431-427b-80ea-7d13e13f4029)
 
 ## 🔧 Dibuat Menggunakan
 
@@ -32,7 +32,6 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 ## 🔴 Demo & Download
 
 - **Mainkan di Web:** [Lari Trus di Netlify](https://lari-terus-kelvin.netlify.app/)
-- **Versi Android:** Tersedia dalam format `.apk`. [Download APK di sini](#) _(Ganti tanda pagar dengan link download APK kamu jika ada, atau hapus baris ini jika file dikirim manual)_
 
 ## Pengembangan Game
 
@@ -80,21 +79,17 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
    ```bash
    git clone [https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git](https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git)
    ```
+✒️ Penulis
+👤 Kelvin Satria Hendra
 
-## ✒️ Penulis
+Github: @KelvinSatriaHendra
 
-👤 **Kelvin Satria Hendra**
-
-- Github: [@KelvinSatriaHendra](https://github.com/KelvinSatriaHendra)
-- LinkedIn: [Kelvin Satria Hendra](https://www.linkedin.com/in/kelvinsatriahendra)
+LinkedIn: Kelvin Satria Hendra
 
 ## Dukungan
-
 Berikan bintang ⭐️ jika kamu menyukai proyek ini!
 
-## Terimakasih
-
-(Credits)
+## Terimakasih (Credits)
 Terima kasih kepada penyedia aset gratis yang digunakan dalam pembelajaran ini:
 
 OpenGameArt.org
