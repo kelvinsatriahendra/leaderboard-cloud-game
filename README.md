@@ -81,18 +81,14 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 ✒️ Penulis
 👤 Kelvin Satria Hendra
 
-Github: @KelvinSatriaHendra
-
-LinkedIn: Kelvin Satria Hendra
+- Github: [@KelvinSatriaHendra](https://github.com/KelvinSatriaHendra)
+- LinkedIn: [Kelvin Satria Hendra](https://www.linkedin.com/in/kelvinsatriahendra)
 
 ## Dukungan
 Berikan bintang ⭐️ jika kamu menyukai proyek ini!
 
 ## Terimakasih (Credits)
 Terima kasih kepada penyedia aset gratis yang digunakan dalam pembelajaran ini:
-
-OpenGameArt.org
-
-CoolText.com
-
-kenney.nl
+- [OpenGameArt.org](https://opengameart.org)
+- [CoolText.com](https://cooltext.com)
+- [kenney.nl](https://kenney.nl)
