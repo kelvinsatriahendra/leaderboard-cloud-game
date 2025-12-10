@@ -23,8 +23,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 
 > **Lari Trus** adalah game platformer endless-runner sederhana yang berfokus pada mengumpulkan koin dan menjatuhkan misil.
 
-> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin sebelum bar kesehatan (_health bar_) habis sepenuhnya.
-
+> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin 
 ## Cara Bermain
 
 - Klik tombol **Instructions** (Petunjuk) di **Main Menu** game untuk membaca aturan dan tujuan permainan, serta kontrol untuk menggerakkan karakter pemain.
