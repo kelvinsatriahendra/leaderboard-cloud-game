@@ -23,7 +23,7 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
 
 > **Lari Trus** adalah game platformer endless-runner sederhana yang berfokus pada mengumpulkan koin dan menjatuhkan misil.
 
-> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin sebelum bar kesehatan (_health bar_) habis sepenuhnya.
+> Game dimulai dengan karakter pemain yang sudah berlari ke depan, dan tujuanmu adalah membantunya mengumpulkan koin sebanyak mungkin
 
 ## Cara Bermain
 
@@ -79,17 +79,19 @@ Proyek ini adalah game platformer "endless" online yang dibangun menggunakan Lib
    ```bash
    git clone [https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git](https://github.com/kelvinsatriahendra/leaderboard-cloud-game.git)
    ```
-✒️ Penulis
-👤 Kelvin Satria Hendra
+   ✒️ Penulis
+   👤 Kelvin Satria Hendra
 
 Github: @KelvinSatriaHendra
 
 LinkedIn: Kelvin Satria Hendra
 
 ## Dukungan
+
 Berikan bintang ⭐️ jika kamu menyukai proyek ini!
 
 ## Terimakasih (Credits)
+
 Terima kasih kepada penyedia aset gratis yang digunakan dalam pembelajaran ini:
 
 OpenGameArt.org
